@@ -1,4 +1,5 @@
-<!DOCTYPE html><html class="dark scroll-smooth" lang="pt-BR" style="width: 1280px; height: 1348px; overflow: hidden; position: relative;"><head>
+<!DOCTYPE html><html class="dark scroll-smooth" lang="pt-BR">
+<head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Detalhes do Projeto | Geraldo Junior - Data Science &amp; Analytics</title>
@@ -38,6 +39,16 @@
       }
     }
   </script>
+<style data-purpose="page-scroll-fix">
+    /* Ensure the page scrolls normally at any height/width instead of being clipped */
+    html, body {
+      height: auto;
+      min-height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  </style>
 <style data-purpose="custom-scrollbars">
     /* Custom dark scrollbar styling */
     ::-webkit-scrollbar {
@@ -80,12 +91,11 @@
 </a>
 <!-- Quick Navigation and CTA -->
 <div class="flex items-center gap-4 sm:gap-6">
-<a class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors duration-200 py-2 px-3 rounded-lg hover:bg-slate-800/60 font-medium" href="#">
+<a class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors duration-200 py-2 px-3 rounded-lg hover:bg-slate-800/60 font-medium" href="../portfolio/index.html">
 <svg class="w-4 h-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
-<a href="../portfolio/index.html">
-  <span class="">Voltar ao Portfólio</span>
+<span>Voltar ao Portfólio</span>
 </a>
 <a class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-500 rounded-lg shadow-sm hover:shadow-brand-500/20 transition-all duration-200" href="#contato">
           Let's Talk
@@ -124,7 +134,7 @@
 <section class="lg:col-span-6 flex flex-col gap-6" data-purpose="project-gallery">
 <!-- Main Image Stage / Carousel Display -->
 <div class="relative group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-black/60 aspect-[16/11]">
-<img alt="Visão Culinária - Fome Zero" class="w-full h-full object-contain transition duration-300 ease-out rounded-xl p-2" id="main-project-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYIydbxPifYLNrJI9dfhRKNapV_8ONvMF8_aZoeNSv2MGgRP7zYVPdloCRSIjnBIHje2u9O_p_YHj-JH7FdRQRDQi7iBO12azEVAcvLzJLOOgnVD8RUx5VBHEyMblbwc-cGjly3s-tmrc6KAwNmL2enSGmU80nrkbIYUjaTTBWEJRrXKIKMOfzWzVkdY9dbJ749hFpdhdFd_YiRfLbynfrkUTFHFz0LE02tTPIfoTPcc8_xeVyG1L82K6wevf0NwpQgg" data-stitch-orig-opacity="1">
+<img alt="Visão Culinária - Fome Zero" class="w-full h-full object-contain transition duration-300 ease-out rounded-xl p-2" id="main-project-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYIydbxPifYLNrJI9dfhRKNapV_8ONvMF8_aZoeNSv2MGgRP7zYVPdloCRSIjnBIHje2u9O_p_YHj-JH7FdRQRDQi7iBO12azEVAcvLzJLOOgnVD8RUx5VBHEyMblbwc-cGjly3s-tmrc6KAwNmL2enSGmU80nrkbIYUjaTTBWEJRrXKIKMOfzWzVkdY9dbJ749hFpdhdFd_YiRfLbynfrkUTFHFz0LE02tTPIfoTPcc8_xeVyG1L82K6wevf0NwpQgg">
 <div class="absolute inset-0 bg-gradient-to-t from-dark-950/70 via-transparent to-transparent pointer-events-none"></div>
 <!-- Carousel Controls -->
 <button aria-label="Imagem anterior" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-dark-900/80 hover:bg-brand-600 text-white border border-slate-700/80 flex items-center justify-center backdrop-blur transition-all duration-200 shadow-lg focus:outline-none focus:ring-2 focus:ring-brand-500 opacity-90 hover:opacity-100" id="prev-slide-btn" type="button">
@@ -137,8 +147,6 @@
 <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 </svg>
 </button>
-<!-- Current Image Indicator Badge -->
-
 </div>
 <!-- Thumbnail Gallery Strip -->
 <div class="grid grid-cols-4 gap-3" data-purpose="thumbnail-selection">
@@ -160,16 +168,11 @@
 <div class="pt-2" data-purpose="tech-stack-badges">
 <h2 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Stack Tecnológica &amp; Ferramentas</h2>
 <div class="flex flex-wrap gap-2">
-<span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-blue-400 hover:border-blue-500 transition-colors">
-              Python&nbsp;</span>
-
-
-
+<span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-blue-400 hover:border-blue-500 transition-colors">Python</span>
 <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-cyan-400 hover:border-cyan-500 transition-colors">Pandas</span>
 <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-blue-400 hover:border-blue-500 transition-colors">Streamlit</span>
 <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-indigo-400 hover:border-indigo-500 transition-colors">Plotly</span>
 <span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-indigo-400 hover:border-indigo-500 transition-colors">Folium</span>
-
 </div>
 </div>
 </section>
@@ -178,21 +181,13 @@
 <section class="lg:col-span-6 flex flex-col gap-6" data-purpose="project-information">
 <!-- Metadata Header: Category badge, Date, and Client -->
 <div class="flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
-
 <div class="flex items-center gap-4 text-slate-400">
 <!-- Project Date -->
 <div class="flex items-center gap-1.5">
 <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
-<span class="">JULHO 2026</span>
-</div>
-<!-- Organization / Client -->
-<div class="flex items-center gap-1.5">
-<svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-
+<span>JULHO 2026</span>
 </div>
 </div>
 </div>
@@ -200,19 +195,19 @@
 <div class="space-y-2">
 <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">Fome Zero - Dashboard de Análise Global de Restaurantes</h2>
 <!-- Live Project Link -->
-<a class="inline-flex items-center gap-2 text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors underline-offset-4 hover:underline" href="https://financial-risk.analytics-demo.internal" rel="noopener noreferrer" target="_blank">
+<a class="inline-flex items-center gap-2 text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors underline-offset-4 hover:underline" href="https://github.com/Geraldojr12/fome-zero" rel="noopener noreferrer" target="_blank">
 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
-<span class="">https://github.com/Geraldojr12/fome-zero</span>
+<span>https://github.com/Geraldojr12/fome-zero</span>
 </a>
 </div>
 <!-- Executive Summary Paragraph -->
-<p class="text-slate-300 text-base leading-relaxed">Desenvolvimento e deploy em produção de um dashboard analítico&nbsp;<br>interativo capaz de processar e explorar +7.500 registros de&nbsp;<br>restaurantes distribuídos em 15 países, respondendo 45 perguntas&nbsp;<br>estratégicas de negócio e entregando insights visuais em tempo real&nbsp;<br>para suporte à tomada de decisão gerencial.</p>
+<p class="text-slate-300 text-base leading-relaxed">Desenvolvimento e deploy em produção de um dashboard analítico interativo capaz de processar e explorar +7.500 registros de restaurantes distribuídos em 15 países, respondendo 45 perguntas estratégicas de negócio e entregando insights visuais em tempo real para suporte à tomada de decisão gerencial.</p>
 <!-- BEGIN: Accordions -->
 <div class="space-y-3 pt-2" data-purpose="collapsible-sections">
 <!-- Accordion 1: Visão Geral (Open by default) -->
-<details class="group bg-dark-850 border border-slate-800 rounded-xl overflow-hidden transition-all open:border-slate-700 open:shadow-lg">
+<details class="group bg-dark-850 border border-slate-800 rounded-xl overflow-hidden transition-all open:border-slate-700 open:shadow-lg" open="">
 <summary class="flex items-center justify-between p-4 sm:p-5 font-semibold text-white cursor-pointer select-none bg-slate-900/40 hover:bg-slate-800/50 transition-colors">
 <span class="flex items-center gap-3">
 <span class="p-1.5 rounded-lg bg-brand-500/10 text-brand-400">
@@ -226,7 +221,7 @@
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </summary>
-<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">A Fome Zero é uma marketplace de restaurantes cujo core business é&nbsp;<br>facilitar o encontro entre clientes e estabelecimentos. O CEO da empresa,&nbsp;<br>recém contratado, precisava entender melhor o negócio para tomar decisões&nbsp;<br>estratégicas mais assertivas — mas não tinha visibilidade sobre os dados&nbsp;<br>da plataforma.<br><br>O desafio foi atuar como Cientista de Dados responsável por analisar&nbsp;<br>toda a base de dados da empresa, responder mais de 45 perguntas de negócio&nbsp;<br>organizadas em 4 categorias (visão geral, países, cidades e culinárias)&nbsp;<br>e entregar um dashboard interativo que permitisse ao CEO visualizar as&nbsp;<br>principais informações de forma rápida e acessível.<br><br>A solução foi desenvolvida em Python, com tratamento e análise exploratória&nbsp;<br>dos dados via Pandas, visualizações interativas com Plotly e Folium, e&nbsp;<br>publicação de um dashboard completo com Streamlit — disponível online e&nbsp;<br>acessível de qualquer dispositivo.<br><br>Durante a análise, foram identificados e tratados problemas reais nos dados,&nbsp;<br>como outliers de cadastro (restaurante com custo de 25 milhões em moeda local), efeitos de câmbio entre países, empates nos rankings e colunas com valor&nbsp;<br>constante — decisões documentadas como premissas do projeto.</div>
+<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">A Fome Zero é uma marketplace de restaurantes cujo core business é facilitar o encontro entre clientes e estabelecimentos. O CEO da empresa, recém contratado, precisava entender melhor o negócio para tomar decisões estratégicas mais assertivas — mas não tinha visibilidade sobre os dados da plataforma.<br><br>O desafio foi atuar como Cientista de Dados responsável por analisar toda a base de dados da empresa, responder mais de 45 perguntas de negócio organizadas em 4 categorias (visão geral, países, cidades e culinárias) e entregar um dashboard interativo que permitisse ao CEO visualizar as principais informações de forma rápida e acessível.<br><br>A solução foi desenvolvida em Python, com tratamento e análise exploratória dos dados via Pandas, visualizações interativas com Plotly e Folium, e publicação de um dashboard completo com Streamlit — disponível online e acessível de qualquer dispositivo.<br><br>Durante a análise, foram identificados e tratados problemas reais nos dados, como outliers de cadastro (restaurante com custo de 25 milhões em moeda local), efeitos de câmbio entre países, empates nos rankings e colunas com valor constante — decisões documentadas como premissas do projeto.</div>
 </details>
 <!-- Accordion 2: O Desafio de Negócio -->
 <details class="group bg-dark-850 border border-slate-800 rounded-xl overflow-hidden transition-all open:border-slate-700 open:shadow-lg">
@@ -243,7 +238,7 @@
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </summary>
-<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">O CEO Kleiton Guerra, recém contratado na Fome Zero, precisava entender&nbsp;<br>o negócio em profundidade para tomar decisões estratégicas com mais&nbsp;<br>segurança. Para isso, solicitou uma análise completa dos dados da&nbsp;<br>plataforma, organizada em 4 frentes:<br><br>→ Visão Geral — métricas consolidadas da plataforma: total de&nbsp;<br>restaurantes, países, cidades, avaliações e tipos de culinária&nbsp;<br>cadastrados.<br><br>→ Visão por País — comparativos entre os 15 países cadastrados,&nbsp;<br>identificando líderes em volume de restaurantes, diversidade culinária,&nbsp;<br>avaliações e preço médio.<br><br>→ Visão por Cidade — análise das 125 cidades registradas, destacando&nbsp;<br>as com mais restaurantes, melhores e piores avaliações, maior preço&nbsp;<br>médio e maior diversidade de culinárias.<br><br>→ Visão por Culinária — performance dos 165 tipos de culinária&nbsp;<br>cadastrados, identificando os melhores e piores restaurantes por&nbsp;<br>categoria e os tipos com maior engajamento na plataforma.<br><br>Além das análises, foi solicitado um dashboard interativo que&nbsp;<br>permitisse ao CEO visualizar todas essas informações de forma&nbsp;<br>rápida, acessível e filtrável — sem depender de relatórios estáticos.</div>
+<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">O CEO Kleiton Guerra, recém contratado na Fome Zero, precisava entender o negócio em profundidade para tomar decisões estratégicas com mais segurança. Para isso, solicitou uma análise completa dos dados da plataforma, organizada em 4 frentes:<br><br>→ Visão Geral — métricas consolidadas da plataforma: total de restaurantes, países, cidades, avaliações e tipos de culinária cadastrados.<br><br>→ Visão por País — comparativos entre os 15 países cadastrados, identificando líderes em volume de restaurantes, diversidade culinária, avaliações e preço médio.<br><br>→ Visão por Cidade — análise das 125 cidades registradas, destacando as com mais restaurantes, melhores e piores avaliações, maior preço médio e maior diversidade de culinárias.<br><br>→ Visão por Culinária — performance dos 165 tipos de culinária cadastrados, identificando os melhores e piores restaurantes por categoria e os tipos com maior engajamento na plataforma.<br><br>Além das análises, foi solicitado um dashboard interativo que permitisse ao CEO visualizar todas essas informações de forma rápida, acessível e filtrável — sem depender de relatórios estáticos.</div>
 </details>
 <!-- Accordion 3: A Solução Técnica -->
 <details class="group bg-dark-850 border border-slate-800 rounded-xl overflow-hidden transition-all open:border-slate-700 open:shadow-lg">
@@ -260,7 +255,7 @@
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </summary>
-<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">Durante o desenvolvimento do projeto, foram identificadas situações&nbsp;<br>que exigiram decisões analíticas antes de responder às perguntas&nbsp;<br>de negócio. Cada decisão foi documentada para garantir transparência&nbsp;<br>e rastreabilidade dos resultados:<br><br>→ Categorização de culinária — restaurantes com múltiplos tipos de&nbsp;<br>culinária cadastrados foram classificados pelo primeiro tipo listado,&nbsp;<br>padronizando a análise e evitando duplicidade de contagem.<br><br>→ Remoção de outlier real — identificado um restaurante australiano&nbsp;<br>com custo médio de 25 milhões em moeda local (Dollar), valor&nbsp;<br>incompatível com todos os outros estabelecimentos da mesma cidade&nbsp;<br>(faixa de 100 a 160). Confirmado como erro de cadastro e removido&nbsp;<br>da base antes das análises de preço.<br><br>→ Efeito de câmbio — valores elevados de restaurantes indonésios&nbsp;<br>(Rupia) foram identificados como efeito de moeda, não como erro.&nbsp;<br>Mantidos na base com ressalva documentada: comparações de preço&nbsp;<br>entre países são válidas apenas dentro da mesma moeda.<br><br>→ Filtro de avaliações — restaurantes com zero votos foram excluídos&nbsp;<br>das análises de menor nota média, pois uma nota 0.0 sem avaliações&nbsp;<br>não representa qualidade real — representa ausência de dados.<br><br>→ Regra de desempate — em casos de empate no ranking, sempre foi&nbsp;<br>selecionado o restaurante com menor restaurant_id, priorizando o&nbsp;<br>estabelecimento mais antigo cadastrado na plataforma.<br><br>→ Teto artificial de coleta — identificado que 19 cidades aparecem&nbsp;<br>empatadas com exatamente 80 restaurantes, sinalizando um limite&nbsp;<br>artificial na coleta original dos dados do Zomato. Documentado como&nbsp;<br>limitação da base, não coincidência estatística.<br><br>→ Coluna sem variação — a coluna switch_to_order_menu apresentou&nbsp;<br>valor constante (0) em 100% das linhas, tornando-a inutilizável para&nbsp;<br>análise. Documentado como limitação da base de dados.</div>
+<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">Durante o desenvolvimento do projeto, foram identificadas situações que exigiram decisões analíticas antes de responder às perguntas de negócio. Cada decisão foi documentada para garantir transparência e rastreabilidade dos resultados:<br><br>→ Categorização de culinária — restaurantes com múltiplos tipos de culinária cadastrados foram classificados pelo primeiro tipo listado, padronizando a análise e evitando duplicidade de contagem.<br><br>→ Remoção de outlier real — identificado um restaurante australiano com custo médio de 25 milhões em moeda local (Dollar), valor incompatível com todos os outros estabelecimentos da mesma cidade (faixa de 100 a 160). Confirmado como erro de cadastro e removido da base antes das análises de preço.<br><br>→ Efeito de câmbio — valores elevados de restaurantes indonésios (Rupia) foram identificados como efeito de moeda, não como erro. Mantidos na base com ressalva documentada: comparações de preço entre países são válidas apenas dentro da mesma moeda.<br><br>→ Filtro de avaliações — restaurantes com zero votos foram excluídos das análises de menor nota média, pois uma nota 0.0 sem avaliações não representa qualidade real — representa ausência de dados.<br><br>→ Regra de desempate — em casos de empate no ranking, sempre foi selecionado o restaurante com menor restaurant_id, priorizando o estabelecimento mais antigo cadastrado na plataforma.<br><br>→ Teto artificial de coleta — identificado que 19 cidades aparecem empatadas com exatamente 80 restaurantes, sinalizando um limite artificial na coleta original dos dados do Zomato. Documentado como limitação da base, não coincidência estatística.<br><br>→ Coluna sem variação — a coluna switch_to_order_menu apresentou valor constante (0) em 100% das linhas, tornando-a inutilizável para análise. Documentado como limitação da base de dados.</div>
 </details>
 </div>
 <!-- END: Accordions -->
@@ -312,7 +307,7 @@
 <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 </svg>
 </div>
-<span class="text-slate-300 font-medium">Tratamento e remoção de outliers reais nos dados&nbsp;</span>
+<span class="text-slate-300 font-medium">Tratamento e remoção de outliers reais nos dados</span>
 </div>
 <div class="flex items-start gap-2.5">
 <div class="mt-0.5 rounded-full p-0.5 bg-brand-500/20 text-brand-400">
@@ -327,15 +322,15 @@
 <!-- END: KeyFeatures -->
 <!-- Action Buttons Footer -->
 <div class="flex flex-wrap items-center gap-4 pt-6 mt-2 border-t border-slate-800">
-<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-brand-600 hover:bg-brand-500 shadow-lg shadow-brand-600/25 transition-all duration-200 transform hover:-translate-y-0.5" href="https://fome-zero-kobaixjrti9kve9gcbhb3s.streamlit.app/">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-brand-600 hover:bg-brand-500 shadow-lg shadow-brand-600/25 transition-all duration-200 transform hover:-translate-y-0.5" href="https://fome-zero-kobaixjrti9kve9gcbhb3s.streamlit.app/" rel="noopener noreferrer" target="_blank">
 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
-<span class="">Ver Projeto</span>
+<span>Ver Projeto</span>
 </a>
 <a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 transition-all duration-200" href="#">
-<span class="">Próximo Projeto</span>
+<span>Próximo Projeto</span>
 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
@@ -351,7 +346,7 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
 <!-- Left Copyright & Attribution -->
 <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs">
-<p class="">© 2026 Geraldo Junior. Todos os direitos reservados.</p>
+<p>© 2026 Geraldo Junior. Todos os direitos reservados.</p>
 <span class="hidden sm:inline text-slate-700">•</span>
 <div class="flex items-center gap-3">
 <a class="hover:text-white transition-colors" href="#">Privacidade</a>
@@ -394,7 +389,6 @@
 
       thumbnails.forEach((thumb) => {
         thumb.addEventListener('click', function () {
-          // Remove active state classes
           thumbnails.forEach((t) => {
             t.classList.remove('border-brand-500', 'ring-2', 'ring-brand-500/50');
             t.classList.add('border-slate-800');
@@ -402,13 +396,11 @@
             if (imgInside) imgInside.classList.add('opacity-70');
           });
 
-          // Add active state to clicked button
           this.classList.remove('border-slate-800');
           this.classList.add('border-brand-500', 'ring-2', 'ring-brand-500/50');
           const activeImg = this.querySelector('img');
           if (activeImg) {
             activeImg.classList.remove('opacity-70');
-            // Subtle swap feedback
             if (mainImage) {
               mainImage.style.opacity = '0.7';
               setTimeout(() => {
@@ -422,20 +414,4 @@
     });
   </script>
 <!-- END: ClientInteractivityScript -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body></html>
