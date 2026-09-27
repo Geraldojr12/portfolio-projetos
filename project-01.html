@@ -1,0 +1,441 @@
+<!DOCTYPE html><html class="dark scroll-smooth" lang="pt-BR" style="width: 1280px; height: 1348px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Detalhes do Projeto | Geraldo Junior - Data Science &amp; Analytics</title>
+<!-- Tailwind CSS CDN with Forms and Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+            },
+            dark: {
+              950: '#070a12',
+              900: '#0b0f19',
+              850: '#0f172a',
+              800: '#161f33',
+              700: '#1e293b',
+              600: '#334155'
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-scrollbars">
+    /* Custom dark scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b0f19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+  </style>
+<style data-purpose="accordion-styles">
+    /* Smooth transitions for details marker */
+    details > summary {
+      list-style: none;
+    }
+    details > summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] summary svg.chevron-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body class="bg-dark-900 text-slate-200 font-sans antialiased min-h-screen flex flex-col selection:bg-brand-600 selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-dark-900/90 backdrop-blur-md border-b border-slate-800/80">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Logo / Identity -->
+<a class="flex items-center gap-2 text-white font-bold text-xl tracking-tight group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-md py-1 px-2" href="#">
+<span class="text-brand-500 font-mono text-2xl group-hover:-translate-x-0.5 transition-transform">&lt;/&gt;</span>
+<span class="text-white">Data<span class="text-brand-500">Science</span></span>
+<span class="hidden sm:inline-block text-xs uppercase tracking-widest text-slate-400 font-medium ml-2 pl-2 border-l border-slate-700">Geraldo Junior</span>
+</a>
+<!-- Quick Navigation and CTA -->
+<div class="flex items-center gap-4 sm:gap-6">
+<a class="inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white transition-colors duration-200 py-2 px-3 rounded-lg hover:bg-slate-800/60 font-medium" href="#">
+<svg class="w-4 h-4 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<a href="../portfolio/index.html">
+  <span class="">Voltar ao Portfólio</span>
+</a>
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-brand-600 hover:bg-brand-500 rounded-lg shadow-sm hover:shadow-brand-500/20 transition-all duration-200" href="#contato">
+          Let's Talk
+        </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: PageSubHeader -->
+<section class="border-b border-slate-800/50 bg-dark-950/40 py-6 sm:py-8" data-purpose="page-title-banner">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+<div>
+<h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">Detalhes do Projeto</h1>
+<p class="text-sm text-slate-400 mt-1">Estudo de caso detalhado.</p>
+</div>
+<!-- Breadcrumb navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center space-x-2 text-sm font-medium text-slate-400">
+<a class="hover:text-brand-400 transition-colors" href="#">Início</a>
+<svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<a class="hover:text-brand-400 transition-colors" href="#">Portfólio</a>
+<svg class="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="text-brand-400">Dashboard Restaurantes Globais </span>
+</nav>
+</div>
+</section>
+<!-- END: PageSubHeader -->
+<!-- BEGIN: MainContent -->
+<main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14 w-full">
+<!-- Two Column Layout: Media Gallery (Left) & Project Info (Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+<!-- BEGIN: MediaColumn -->
+<section class="lg:col-span-6 flex flex-col gap-6" data-purpose="project-gallery">
+<!-- Main Image Stage / Carousel Display -->
+<div class="relative group bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl shadow-black/60 aspect-[16/11]">
+<img alt="Visão Culinária - Fome Zero" class="w-full h-full object-contain transition duration-300 ease-out rounded-xl p-2" id="main-project-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYIydbxPifYLNrJI9dfhRKNapV_8ONvMF8_aZoeNSv2MGgRP7zYVPdloCRSIjnBIHje2u9O_p_YHj-JH7FdRQRDQi7iBO12azEVAcvLzJLOOgnVD8RUx5VBHEyMblbwc-cGjly3s-tmrc6KAwNmL2enSGmU80nrkbIYUjaTTBWEJRrXKIKMOfzWzVkdY9dbJ749hFpdhdFd_YiRfLbynfrkUTFHFz0LE02tTPIfoTPcc8_xeVyG1L82K6wevf0NwpQgg" data-stitch-orig-opacity="1">
+<div class="absolute inset-0 bg-gradient-to-t from-dark-950/70 via-transparent to-transparent pointer-events-none"></div>
+<!-- Carousel Controls -->
+<button aria-label="Imagem anterior" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-dark-900/80 hover:bg-brand-600 text-white border border-slate-700/80 flex items-center justify-center backdrop-blur transition-all duration-200 shadow-lg focus:outline-none focus:ring-2 focus:ring-brand-500 opacity-90 hover:opacity-100" id="prev-slide-btn" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</button>
+<button aria-label="Próxima imagem" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-dark-900/80 hover:bg-brand-600 text-white border border-slate-700/80 flex items-center justify-center backdrop-blur transition-all duration-200 shadow-lg focus:outline-none focus:ring-2 focus:ring-brand-500 opacity-90 hover:opacity-100" id="next-slide-btn" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</button>
+<!-- Current Image Indicator Badge -->
+
+</div>
+<!-- Thumbnail Gallery Strip -->
+<div class="grid grid-cols-4 gap-3" data-purpose="thumbnail-selection">
+<button class="thumb-btn active relative rounded-xl overflow-hidden border-2 aspect-[4/3] focus:outline-none transition-all shadow-md group border-brand-500 ring-2 ring-brand-500/50" type="button">
+<img alt="Miniatura do painel executivo principal" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9hrh9bQ0dh5flWsjmv9U7AT0u0PqKyrEqOVUjiTSQe9yNZBgo66ig02Hojw9WSTFAt242CgtWuGf3gyceWiws_gtImvsI-RjN7sLsDjX0a88GotJgyOWLqrJuiTk4fDjrNJEELjvQ35C8qvsnuEI5DSLF1EovWR9-fjW9qbB2TEPiag--jMGIWUchmihYoB-l2stBMH03WOzHkiaP78iv1mCOlqa2WUA5mb3fSC1Il1-sBwjpXZpSSgILrAm9IeY86Q">
+<div class="absolute inset-0 bg-brand-500/10"></div>
+</button>
+<button class="thumb-btn relative rounded-xl overflow-hidden border-2 hover:border-slate-600 aspect-[4/3] focus:outline-none transition-all shadow group border-slate-800" type="button">
+<img alt="Visão por Países" class="w-full h-full object-cover group-hover:scale-105 transition-transform group-hover:opacity-100 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmFNBFcq0aYsAtaNeSFchKlE7WZBVguv-iVg5M5NvGbWHXmjFHn6cIFjAEi1hopEm1PicPJ1p9gEFG2-1Py8tNzMyiYFKj2mDZ--BnADyaIqoKp4j7EQO54fILocK6NbrV0KA3uj3yaKh8MbhAzvkMZFHhg2eJLNlcbonkQSwSacD4nNrovPeT3D2Q3i5ajeJjUG2AaRvx3Q2ENHKdcrt61Qmcy_Lq8jokLHSeN5Van4cPS0UAmjPMVifeBpmV5amurg">
+</button>
+<button class="thumb-btn relative rounded-xl overflow-hidden border-2 hover:border-slate-600 aspect-[4/3] focus:outline-none transition-all shadow group border-slate-800" type="button">
+<img alt="Visão por Cidades - Quantidade de Restaurantes por Cidade" class="w-full h-full object-cover group-hover:scale-105 transition-transform group-hover:opacity-100 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbxiUY4-aPZrDUjhl7jE40-vJWKOD1pYkiQNmYRgrfs8gEuoYguIM0vg6pbKdJO1BK9EMHNNxa966YofHsnvIYxfH_NOGBVgXKUEm24CiwApgXRrQ0PZXj05Vk8yhXTTLfaaEaF5qQV0XaItHA7ecdgZJ4kI86ZTmMklkzfydHWU42xW02xb5bDxmwc8mBQZZM83coA3wqaU07nJUEG_Shl5JcherRGYprOpRCcpx3fImcNMmliqYoZWgQDS-_-ad4wA">
+</button>
+<button class="thumb-btn relative rounded-xl overflow-hidden border-2 hover:border-slate-600 aspect-[4/3] focus:outline-none transition-all shadow group border-slate-800" type="button">
+<img alt="Visão Culinária" class="w-full h-full object-cover group-hover:scale-105 transition-transform group-hover:opacity-100 opacity-70" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5fR9vt9mKSHN-1CaeEg5ZbofXGbjIE9JK7cmCxd9hwg_J2OZor1EREFMBjsxOrCtQ6czafbneB_tGI48grRgLOe6FoJNBuxeqS2Aok49MakY6LWOEtSLVjWHXg9RB9Aj6298ptjOYlsxbukWu8HUbxIeDJV6l-c-eVdBWeStB1h6H2c1iYg2o-7D2Zo-aeDlslOsbSE34o0nt05FW_KIXg9h6-Yl3o6jEtOFyAZHMvhenIgEVoMDbxBKAhaJdWLhsMA">
+</button>
+</div>
+<!-- Tech Stack Tags Container -->
+<div class="pt-2" data-purpose="tech-stack-badges">
+<h2 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Stack Tecnológica &amp; Ferramentas</h2>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-blue-400 hover:border-blue-500 transition-colors">
+              Python&nbsp;</span>
+
+
+
+<span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-cyan-400 hover:border-cyan-500 transition-colors">Pandas</span>
+<span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-blue-400 hover:border-blue-500 transition-colors">Streamlit</span>
+<span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-indigo-400 hover:border-indigo-500 transition-colors">Plotly</span>
+<span class="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-semibold bg-dark-850 border border-slate-700/80 text-indigo-400 hover:border-indigo-500 transition-colors">Folium</span>
+
+</div>
+</div>
+</section>
+<!-- END: MediaColumn -->
+<!-- BEGIN: DetailsColumn -->
+<section class="lg:col-span-6 flex flex-col gap-6" data-purpose="project-information">
+<!-- Metadata Header: Category badge, Date, and Client -->
+<div class="flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm">
+
+<div class="flex items-center gap-4 text-slate-400">
+<!-- Project Date -->
+<div class="flex items-center gap-1.5">
+<svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="">JULHO 2026</span>
+</div>
+<!-- Organization / Client -->
+<div class="flex items-center gap-1.5">
+<svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+
+</div>
+</div>
+</div>
+<!-- Project Title -->
+<div class="space-y-2">
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">Fome Zero - Dashboard de Análise Global de Restaurantes</h2>
+<!-- Live Project Link -->
+<a class="inline-flex items-center gap-2 text-sm font-medium text-brand-400 hover:text-brand-300 transition-colors underline-offset-4 hover:underline" href="https://financial-risk.analytics-demo.internal" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="">https://github.com/Geraldojr12/fome-zero</span>
+</a>
+</div>
+<!-- Executive Summary Paragraph -->
+<p class="text-slate-300 text-base leading-relaxed">Desenvolvimento e deploy em produção de um dashboard analítico&nbsp;<br>interativo capaz de processar e explorar +7.500 registros de&nbsp;<br>restaurantes distribuídos em 15 países, respondendo 45 perguntas&nbsp;<br>estratégicas de negócio e entregando insights visuais em tempo real&nbsp;<br>para suporte à tomada de decisão gerencial.</p>
+<!-- BEGIN: Accordions -->
+<div class="space-y-3 pt-2" data-purpose="collapsible-sections">
+<!-- Accordion 1: Visão Geral (Open by default) -->
+<details class="group bg-dark-850 border border-slate-800 rounded-xl overflow-hidden transition-all open:border-slate-700 open:shadow-lg">
+<summary class="flex items-center justify-between p-4 sm:p-5 font-semibold text-white cursor-pointer select-none bg-slate-900/40 hover:bg-slate-800/50 transition-colors">
+<span class="flex items-center gap-3">
+<span class="p-1.5 rounded-lg bg-brand-500/10 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+                Visão Geral do Projeto
+              </span>
+<svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</summary>
+<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">A Fome Zero é uma marketplace de restaurantes cujo core business é&nbsp;<br>facilitar o encontro entre clientes e estabelecimentos. O CEO da empresa,&nbsp;<br>recém contratado, precisava entender melhor o negócio para tomar decisões&nbsp;<br>estratégicas mais assertivas — mas não tinha visibilidade sobre os dados&nbsp;<br>da plataforma.<br><br>O desafio foi atuar como Cientista de Dados responsável por analisar&nbsp;<br>toda a base de dados da empresa, responder mais de 45 perguntas de negócio&nbsp;<br>organizadas em 4 categorias (visão geral, países, cidades e culinárias)&nbsp;<br>e entregar um dashboard interativo que permitisse ao CEO visualizar as&nbsp;<br>principais informações de forma rápida e acessível.<br><br>A solução foi desenvolvida em Python, com tratamento e análise exploratória&nbsp;<br>dos dados via Pandas, visualizações interativas com Plotly e Folium, e&nbsp;<br>publicação de um dashboard completo com Streamlit — disponível online e&nbsp;<br>acessível de qualquer dispositivo.<br><br>Durante a análise, foram identificados e tratados problemas reais nos dados,&nbsp;<br>como outliers de cadastro (restaurante com custo de 25 milhões em moeda local), efeitos de câmbio entre países, empates nos rankings e colunas com valor&nbsp;<br>constante — decisões documentadas como premissas do projeto.</div>
+</details>
+<!-- Accordion 2: O Desafio de Negócio -->
+<details class="group bg-dark-850 border border-slate-800 rounded-xl overflow-hidden transition-all open:border-slate-700 open:shadow-lg">
+<summary class="flex items-center justify-between p-4 sm:p-5 font-semibold text-white cursor-pointer select-none bg-slate-900/40 hover:bg-slate-800/50 transition-colors">
+<span class="flex items-center gap-3">
+<span class="p-1.5 rounded-lg bg-brand-500/10 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+                O Desafio de Negócio
+              </span>
+<svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</summary>
+<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">O CEO Kleiton Guerra, recém contratado na Fome Zero, precisava entender&nbsp;<br>o negócio em profundidade para tomar decisões estratégicas com mais&nbsp;<br>segurança. Para isso, solicitou uma análise completa dos dados da&nbsp;<br>plataforma, organizada em 4 frentes:<br><br>→ Visão Geral — métricas consolidadas da plataforma: total de&nbsp;<br>restaurantes, países, cidades, avaliações e tipos de culinária&nbsp;<br>cadastrados.<br><br>→ Visão por País — comparativos entre os 15 países cadastrados,&nbsp;<br>identificando líderes em volume de restaurantes, diversidade culinária,&nbsp;<br>avaliações e preço médio.<br><br>→ Visão por Cidade — análise das 125 cidades registradas, destacando&nbsp;<br>as com mais restaurantes, melhores e piores avaliações, maior preço&nbsp;<br>médio e maior diversidade de culinárias.<br><br>→ Visão por Culinária — performance dos 165 tipos de culinária&nbsp;<br>cadastrados, identificando os melhores e piores restaurantes por&nbsp;<br>categoria e os tipos com maior engajamento na plataforma.<br><br>Além das análises, foi solicitado um dashboard interativo que&nbsp;<br>permitisse ao CEO visualizar todas essas informações de forma&nbsp;<br>rápida, acessível e filtrável — sem depender de relatórios estáticos.</div>
+</details>
+<!-- Accordion 3: A Solução Técnica -->
+<details class="group bg-dark-850 border border-slate-800 rounded-xl overflow-hidden transition-all open:border-slate-700 open:shadow-lg">
+<summary class="flex items-center justify-between p-4 sm:p-5 font-semibold text-white cursor-pointer select-none bg-slate-900/40 hover:bg-slate-800/50 transition-colors">
+<span class="flex items-center gap-3">
+<span class="p-1.5 rounded-lg bg-brand-500/10 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</span>
+                A Solução Técnica &amp; Algoritmos
+              </span>
+<svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</summary>
+<div class="p-5 pt-3 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 bg-dark-900/40">Durante o desenvolvimento do projeto, foram identificadas situações&nbsp;<br>que exigiram decisões analíticas antes de responder às perguntas&nbsp;<br>de negócio. Cada decisão foi documentada para garantir transparência&nbsp;<br>e rastreabilidade dos resultados:<br><br>→ Categorização de culinária — restaurantes com múltiplos tipos de&nbsp;<br>culinária cadastrados foram classificados pelo primeiro tipo listado,&nbsp;<br>padronizando a análise e evitando duplicidade de contagem.<br><br>→ Remoção de outlier real — identificado um restaurante australiano&nbsp;<br>com custo médio de 25 milhões em moeda local (Dollar), valor&nbsp;<br>incompatível com todos os outros estabelecimentos da mesma cidade&nbsp;<br>(faixa de 100 a 160). Confirmado como erro de cadastro e removido&nbsp;<br>da base antes das análises de preço.<br><br>→ Efeito de câmbio — valores elevados de restaurantes indonésios&nbsp;<br>(Rupia) foram identificados como efeito de moeda, não como erro.&nbsp;<br>Mantidos na base com ressalva documentada: comparações de preço&nbsp;<br>entre países são válidas apenas dentro da mesma moeda.<br><br>→ Filtro de avaliações — restaurantes com zero votos foram excluídos&nbsp;<br>das análises de menor nota média, pois uma nota 0.0 sem avaliações&nbsp;<br>não representa qualidade real — representa ausência de dados.<br><br>→ Regra de desempate — em casos de empate no ranking, sempre foi&nbsp;<br>selecionado o restaurante com menor restaurant_id, priorizando o&nbsp;<br>estabelecimento mais antigo cadastrado na plataforma.<br><br>→ Teto artificial de coleta — identificado que 19 cidades aparecem&nbsp;<br>empatadas com exatamente 80 restaurantes, sinalizando um limite&nbsp;<br>artificial na coleta original dos dados do Zomato. Documentado como&nbsp;<br>limitação da base, não coincidência estatística.<br><br>→ Coluna sem variação — a coluna switch_to_order_menu apresentou&nbsp;<br>valor constante (0) em 100% das linhas, tornando-a inutilizável para&nbsp;<br>análise. Documentado como limitação da base de dados.</div>
+</details>
+</div>
+<!-- END: Accordions -->
+<!-- BEGIN: KeyFeatures -->
+<div class="pt-4" data-purpose="project-highlights">
+<div class="flex items-center gap-2 mb-4">
+<svg class="w-5 h-5 text-brand-500" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" fill-rule="evenodd"></path>
+</svg>
+<h3 class="text-base font-bold text-white uppercase tracking-wider">Principais Funcionalidades &amp; Impacto</h3>
+</div>
+<!-- Features Grid (2 columns) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-sm">
+<div class="flex items-start gap-2.5">
+<div class="mt-0.5 rounded-full p-0.5 bg-brand-500/20 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<span class="text-slate-300 font-medium">Dashboard interativo com 5 páginas analíticas</span>
+</div>
+<div class="flex items-start gap-2.5">
+<div class="mt-0.5 rounded-full p-0.5 bg-brand-500/20 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<span class="text-slate-300 font-medium">Mapa interativo com +7.500 restaurantes globais</span>
+</div>
+<div class="flex items-start gap-2.5">
+<div class="mt-0.5 rounded-full p-0.5 bg-brand-500/20 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<span class="text-slate-300 font-medium">45 perguntas de negócio respondidas com dados</span>
+</div>
+<div class="flex items-start gap-2.5">
+<div class="mt-0.5 rounded-full p-0.5 bg-brand-500/20 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<span class="text-slate-300 font-medium">Filtros dinâmicos por país, culinária e quantidade</span>
+</div>
+<div class="flex items-start gap-2.5">
+<div class="mt-0.5 rounded-full p-0.5 bg-brand-500/20 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<span class="text-slate-300 font-medium">Tratamento e remoção de outliers reais nos dados&nbsp;</span>
+</div>
+<div class="flex items-start gap-2.5">
+<div class="mt-0.5 rounded-full p-0.5 bg-brand-500/20 text-brand-400">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+</div>
+<span class="text-slate-300 font-medium">Deploy em produção via Streamlit Cloud</span>
+</div>
+</div>
+</div>
+<!-- END: KeyFeatures -->
+<!-- Action Buttons Footer -->
+<div class="flex flex-wrap items-center gap-4 pt-6 mt-2 border-t border-slate-800">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-bold text-white bg-brand-600 hover:bg-brand-500 shadow-lg shadow-brand-600/25 transition-all duration-200 transform hover:-translate-y-0.5" href="https://fome-zero-kobaixjrti9kve9gcbhb3s.streamlit.app/">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="">Ver Projeto</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 transition-all duration-200" href="#">
+<span class="">Próximo Projeto</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</section>
+<!-- END: DetailsColumn -->
+</div>
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: MainFooter -->
+<footer class="mt-auto border-t border-slate-800 bg-dark-950/80 backdrop-blur text-slate-400 py-10" data-purpose="page-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Left Copyright & Attribution -->
+<div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs">
+<p class="">© 2026 Geraldo Junior. Todos os direitos reservados.</p>
+<span class="hidden sm:inline text-slate-700">•</span>
+<div class="flex items-center gap-3">
+<a class="hover:text-white transition-colors" href="#">Privacidade</a>
+<a class="hover:text-white transition-colors" href="#">Termos de Serviço</a>
+</div>
+</div>
+<!-- Social Media Icons (GitHub, LinkedIn, Kaggle, X) -->
+<div class="flex items-center space-x-3 text-slate-400">
+<!-- GitHub -->
+<a aria-label="GitHub" class="w-9 h-9 rounded-full bg-slate-800/80 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-all duration-200 border border-slate-700/60" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<!-- LinkedIn -->
+<a aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-slate-800/80 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-all duration-200 border border-slate-700/60" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+</svg>
+</a>
+<!-- Kaggle -->
+<a aria-label="Kaggle" class="w-9 h-9 rounded-full bg-slate-800/80 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-all duration-200 border border-slate-700/60 font-bold text-xs" href="https://kaggle.com" rel="noopener noreferrer" target="_blank">
+          k
+        </a>
+<!-- X (Twitter) -->
+<a aria-label="X (Twitter)" class="w-9 h-9 rounded-full bg-slate-800/80 hover:bg-brand-600 hover:text-white flex items-center justify-center transition-all duration-200 border border-slate-700/60" href="https://x.com" rel="noopener noreferrer" target="_blank">
+<svg class="w-3.5 h-3.5 fill-currentColor" viewBox="0 0 24 24">
+<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+</svg>
+</a>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: ClientInteractivityScript -->
+<script data-purpose="gallery-thumbnail-interaction">
+    document.addEventListener('DOMContentLoaded', function () {
+      const mainImage = document.getElementById('main-project-image');
+      const thumbnails = document.querySelectorAll('.thumb-btn');
+
+      thumbnails.forEach((thumb) => {
+        thumb.addEventListener('click', function () {
+          // Remove active state classes
+          thumbnails.forEach((t) => {
+            t.classList.remove('border-brand-500', 'ring-2', 'ring-brand-500/50');
+            t.classList.add('border-slate-800');
+            const imgInside = t.querySelector('img');
+            if (imgInside) imgInside.classList.add('opacity-70');
+          });
+
+          // Add active state to clicked button
+          this.classList.remove('border-slate-800');
+          this.classList.add('border-brand-500', 'ring-2', 'ring-brand-500/50');
+          const activeImg = this.querySelector('img');
+          if (activeImg) {
+            activeImg.classList.remove('opacity-70');
+            // Subtle swap feedback
+            if (mainImage) {
+              mainImage.style.opacity = '0.7';
+              setTimeout(() => {
+                mainImage.src = activeImg.src;
+                mainImage.style.opacity = '1';
+              }, 120);
+            }
+          }
+        });
+      });
+    });
+  </script>
+<!-- END: ClientInteractivityScript -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
